@@ -1,5 +1,5 @@
 import mixin from '../src';
-import { Positionable, Walkable, Jumpable } from './mixin.fixture';
+import { Positionable, Walkable, Jumpable, Loggable } from './mixin.fixture';
 
 describe('mixin', () => {
   class Person extends mixin(Positionable, Walkable, Jumpable) {}
@@ -32,5 +32,11 @@ describe('mixin', () => {
     person.jump();
     expect(person.x).toBe(1);
     expect(person.y).toBe(2);
+  });
+
+  it('can extend empty classes', () => {
+    class EmptyExtended extends mixin(class {}, Loggable) {}
+    const loggable = new EmptyExtended();
+    expect(loggable.log).toBeDefined();
   });
 });
