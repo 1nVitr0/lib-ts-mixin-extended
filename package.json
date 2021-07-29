@@ -10,6 +10,13 @@
     "dist",
     "src"
   ],
+  "keywords": [
+    "mixin",
+    "typescript",
+    "util",
+    "class",
+    "chain"
+  ],
   "engines": {
     "node": ">=10"
   },
