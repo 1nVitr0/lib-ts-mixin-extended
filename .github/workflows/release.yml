@@ -24,7 +24,7 @@ jobs:
       - name: Publish release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+          NPM_TOKEN: ${{secrets.npm_token}}
         run: npx semantic-release
 
   update_develop:

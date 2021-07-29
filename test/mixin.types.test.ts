@@ -61,8 +61,17 @@ describe('mixin types', () => {
     expectAssignable<LoggableInstance>(loggablePerson);
   });
 
-  it('does not allow incompatible classes', () => {
+  it('rejects incompatible classes', () => {
     // @ts-expect-error Greetable uses properties not in Positionable
     expectTypeError(mixin(Positionable, Greetable));
+
+    // @ts-expect-error Greetable uses properties
+    expectTypeError(mixin(class {}, Greetable));
+  });
+
+  it('allows extending empty classes', () => {
+    class EmptyExtended extends mixin(class {}, Loggable) {}
+    const loggable = new EmptyExtended();
+    expectAssignable<LoggableInstance>(loggable);
   });
 });
