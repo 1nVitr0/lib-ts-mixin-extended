@@ -1,6 +1,6 @@
-type UnionToIntersection<T> = (T extends any ? (x: T) => any : never) extends (
-  x: infer R
-) => any
+type UnionToIntersection<T> = (T extends any
+? (x: T) => any
+: never) extends (x: infer R) => any
   ? R
   : never;
 
@@ -21,10 +21,11 @@ export type MixinReturnValue<
     }[number]
 >;
 
-export type MixinInstance<F extends MixinFunction<any>> =
-  F extends MixinFunction<MixinConstructor<any>, infer R>
-    ? InstanceType<R>
-    : never;
+export type MixinInstance<
+  F extends MixinFunction<any>
+> = F extends MixinFunction<MixinConstructor<any>, infer R>
+  ? InstanceType<R>
+  : never;
 
 export default function mixin<
   T extends MixinConstructor,
