@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/1nVitr0/lib-ts-mixin-extended/compare/v1.1.0...v1.1.1) (2022-05-30)
+
+
+### Bug Fixes
+
+* update dependencies ([9f09a32](https://github.com/1nVitr0/lib-ts-mixin-extended/commit/9f09a3285d4c13afcda948ea73fb6c589b8c9d13))
+
 # [1.1.0](https://github.com/1nVitr0/lib-ts-mixin-extended/compare/v1.0.0...v1.1.0) (2021-07-29)
 
 
