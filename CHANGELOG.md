@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/1nVitr0/lib-ts-mixin-extended/compare/v1.1.2...v1.1.3) (2023-10-31)
+
+
+### Bug Fixes
+
+* update and add tsdoc comments ([1d53b11](https://github.com/1nVitr0/lib-ts-mixin-extended/commit/1d53b118cd18b747331828074bf45ae14800fd3c))
+
 ## [1.1.2](https://github.com/1nVitr0/lib-ts-mixin-extended/compare/v1.1.1...v1.1.2) (2023-02-13)
 
 
